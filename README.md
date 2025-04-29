@@ -1,26 +1,32 @@
 <div align="center">
+  <h3 align="center">
+    🧠 <strong>AI_INTERVUE</strong>  
+    <br />
+    INTERVUE: An AI-powered mock interview platform to help you become interview-ready with real-time feedback, voice-based Q&A, and a modern interface.
+  </h3>
+  <div>
+    <img src="https://img.shields.io/badge/-Next.JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=black" alt="Next.js" />
+    <img src="https://img.shields.io/badge/-Vapi-white?style=for-the-badge&color=5dfeca" alt="Vapi" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/-Firebase-black?style=for-the-badge&logoColor=white&logo=firebase&color=DD2C00" alt="Firebase" />
+  </div>
   <br />
-      <img src="https://github.com/ContactKushik/AI_INTERVUE/blob/main/poster.png" alt="Project Banner">    
+  <img src="https://github.com/ContactKushik/AI_INTERVUE/blob/main/deskposter.png" alt="Project Banner" height=500px />
   <br />
   
-  <div>
-    <img src="https://img.shields.io/badge/-Next.JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=black" alt="next.js" />
-    <img src="https://img.shields.io/badge/-Vapi-white?style=for-the-badge&color=5dfeca" alt="vapi" />
-    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
-    <img src="https://img.shields.io/badge/-Firebase-black?style=for-the-badge&logoColor=white&logo=firebase&color=DD2C00" alt="firebase" />
-  </div>
- <h3 align="center"> # 🧠 AI_INTERVUE  
-INTERVUE: An AI-powered mock interview platform to help you become interview-ready with real-time feedback, voice-based Q&A, and a modern interface.
-  </h3>
-
-   
 </div>
 
-#🧑‍💻TOO HECTIC TO SETUP CHECK IT OUT LIVE!!!!(BELIEVE ITS MUCH EASIER TO VIEW DEPLOYED VERSION)
-🌐 [Live Demo](https://ai-intervue-eight.vercel.app/)  
-📂 [GitHub Repo](https://github.com/ContactKushik/AI_INTERVUE)
+---
+
+## 🧑‍💻 Too hectic to set up?
+
+🎯 **Check it out LIVE instead – it's much easier to experience the platform firsthand!**
+
+👉 **🔗 [Live Demo (Vercel Deployment)](https://ai-intervue-eight.vercel.app/)**  
+📦 **[GitHub Repository](https://github.com/ContactKushik/AI_INTERVUE)**
 
 ---
+
 
 ## 📋 Table of Contents
 
