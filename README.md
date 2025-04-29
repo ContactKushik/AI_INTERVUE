@@ -175,7 +175,7 @@ const data = await res.json();
 
 The following image represents how the **Vapi Voice Interview Workflow** operates:
 
-> 📷 `vapi_workflow.jpg` (Place this image in the root directory)
+> 📷 `vapi_workflow.png` (Place this image in the root directory)
 
 ```markdown
 ![Vapi Workflow](./vapi_workflow.jpg)
