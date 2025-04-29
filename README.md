@@ -181,9 +181,9 @@ The following image represents how the **Vapi Voice Interview Workflow** operate
 
 > 📷 `vapi_workflow.png` (Place this image in the root directory)
 
-```markdown
-![Vapi Workflow](./vapi_workflow.jpg)
-```
+<br />
+  <img src="https://github.com/ContactKushik/AI_INTERVUE/blob/main/deskposter.png" alt="Project Banner" height=500px />
+  <br />
 
 ---
 
