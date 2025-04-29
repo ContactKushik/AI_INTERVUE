@@ -1,36 +1,197 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 AI_INTERVUE  
+An AI-powered mock interview platform to help you become interview-ready with real-time feedback, voice-based Q&A, and a modern interface.
 
-## Getting Started
+🌐 [Live Demo](https://ai-intervue-eight.vercel.app/)  
+📂 [GitHub Repo](https://github.com/ContactKushik/AI_INTERVUE)
 
-First, run the development server:
+---
+
+## 📋 Table of Contents
+
+- 🤖 [Introduction](#-introduction)  
+- ⚙️ [Tech Stack](#-tech-stack)  
+- 🔋 [Features](#-features)  
+- 🤸 [Quick Start](#-quick-start)  
+- 🕸️ [Snippets (Code to Copy)](#️-snippets-code-to-copy)  
+- 🔗 [Assets](#-assets)  
+- 🚀 [More](#-more)
+
+---
+
+## 🤖 Introduction
+
+**AI_INTERVUE** is your personal AI interview assistant, combining voice-based AI agents, modern UI, and analytics to simulate real-world interviews. Built using Next.js and powered by Vapi AI and Google Gemini, this platform gives you a true-to-life mock interview experience.
+
+---
+
+## ⚙️ Tech Stack
+
+| Tech           | Purpose                                         |
+|----------------|-------------------------------------------------|
+| **Next.js**    | React framework with App Router & SSR support   |
+| **Firebase**   | Authentication & Firestore database             |
+| **Tailwind CSS** | Utility-first styling for custom UI design    |
+| **Vapi AI**    | Voice AI for interactive Q&A                    |
+| **Google Gemini** | AI model for generating intelligent questions |
+| **shadcn/ui**  | Component library for accessible design         |
+| **Zod**        | TypeScript-first schema validation              |
+
+---
+
+## 🔋 Features
+
+👉 **Authentication**  
+Sign Up and Sign In using Firebase’s secure email/password authentication.
+
+👉 **Create Interviews**  
+Generate mock interviews powered by **Vapi voice assistants** and **Google Gemini**. Tailored to job roles and user preferences.
+
+👉 **Get Feedback from AI**  
+Engage in a voice-based interview with an AI agent. Receive **real-time feedback** and actionable insights based on your responses.
+
+👉 **Modern UI/UX**  
+Built with **shadcn/ui**, **TailwindCSS**, and **Next.js App Router** for a seamless user experience.
+
+👉 **Interview Page**  
+Conduct live interviews, view detailed **transcripts**, and track performance metrics.
+
+👉 **Dashboard**  
+Easily manage and track all your past interviews with a clean, navigable interface.
+
+👉 **Responsiveness**  
+Fully responsive design, ensuring functionality across all devices – mobile, tablet, and desktop.
+
+✨ **And More**  
+- Reusable and modular code architecture  
+- Clean file and folder structure  
+- Type-safe code using Zod  
+- Progressive enhancement with SSR
+
+---
+
+## 🤸 Quick Start
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/ContactKushik/AI_INTERVUE
+cd AI_INTERVUE
+```
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3️⃣ Setup Environment Variables
+
+Create a `.env.local` file in the root directory:
+
+```env
+NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
+OPENAI_API_KEY=your_openai_api_key
+VAPI_API_KEY=your_vapi_key
+GEMINI_API_KEY=your_google_gemini_key
+```
+
+### 4️⃣ Run Locally
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🕸️ Snippets (Code to Copy)
 
-## Learn More
+### 🔐 Firebase Init (`firebase/config.ts`)
+```ts
+import { initializeApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
-To learn more about Next.js, take a look at the following resources:
+const firebaseConfig = {
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+};
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const db = getFirestore(app);
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🧠 Gemini & Vapi Sample Interaction
+```ts
+const res = await fetch("/api/start-interview", {
+  method: "POST",
+  body: JSON.stringify({
+    role: "Software Developer",
+    difficulty: "Medium",
+  }),
+});
 
-## Deploy on Vercel
+const data = await res.json();
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔗 Assets
+
+### 🧭 Vapi Workflow
+
+The following image represents how the **Vapi Voice Interview Workflow** operates:
+
+> 📷 `vapi_workflow.jpg` (Place this image in the root directory)
+
+```markdown
+![Vapi Workflow](./vapi_workflow.jpg)
+```
+
+---
+
+## 🚀 More
+
+### 📁 Folder Structure
+
+```
+.
+├── app/                 # Next.js App Router
+├── components/          # UI Components
+├── firebase/            # Firebase Setup
+├── lib/                 # Helpers and API logic
+├── constants/           # App-wide static values
+├── types/               # Global TypeScript types
+├── public/              # Static assets
+├── styles/              # Tailwind CSS config
+├── .env.local           # Local environment variables
+└── ...
+```
+
+### 🙌 Contributing
+
+Have an idea or found a bug? Feel free to:
+
+1. Fork this repo
+2. Create a new branch: `git checkout -b feature/yourFeature`
+3. Commit your changes: `git commit -m 'Add new feature'`
+4. Push and submit a PR!
+
+### 📜 License
+
+MIT © [Kushik](https://github.com/ContactKushik)
