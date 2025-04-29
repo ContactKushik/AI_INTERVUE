@@ -28,7 +28,7 @@ const Page = async () => {
           </p>
 
           <Button asChild className="btn-primary max-sm:w-full">
-            <Link href="/interview">Start an Interview</Link>
+            <Link href="/interview">Create an Interview</Link>
           </Button>
         </div>
 
@@ -43,7 +43,7 @@ const Page = async () => {
             userInterviews?.map((interview) => (
               <InterviewCard {...interview} key={interview.id} />
             ))) : (
-            <p>You haven&apos;t taken any interviews yet</p>
+            <p>You haven&apos;t created any interviews yet</p>
           )}
         </div>
       </section>
