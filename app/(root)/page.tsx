@@ -13,7 +13,7 @@ const Page = async () => {
     await getInterviewsByUserId(user?.id!),
     await getLatestInterviews({ userId: user?.id! })
   ]);
-  console.log(userInterviews);
+
   const hasPastInterviews = userInterviews?.length > 0;
   const hasUpcomingInterviews = latestInterviews?.length > 0;
 
