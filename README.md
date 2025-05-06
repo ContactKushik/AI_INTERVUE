@@ -23,6 +23,9 @@
 🎯 **Check it out LIVE instead – it's much easier to experience the platform firsthand!**
 
 👉 **🔗 [Live Demo (Vercel Deployment)](https://ai-intervue-eight.vercel.app/)**  
+<div>
+  <iframe width="917" height="516" src="https://www.youtube.com/embed/HaORgwTnJCY" title="INTERVUE_DEMO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 📦 **[GitHub Repository](https://github.com/ContactKushik/AI_INTERVUE)**
 
 ---
